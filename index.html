@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<!--<script type="text/javascript"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	
+	<script>
+		$(document).ready(function(){
+
+			$("#flip").click(function(){
+				$("#panel").slideUp("slow");
+
+			});
+				
+			$(".main").html("WELCOME!");
+			$("#bluesq").fadeOut(2000);
+			$("ylbox").fadeIn(3000);
+
+	 	});
+
+
+			
+	</script>		
+				
+
+
+		<style>
+
+
+		 #panel, #flip{
+		 	padding: 5px;
+		 	text-align: center;
+		 	background-color: orange;
+		 	font-family: arial;
+		 }
+
+		 #panel{
+		 	padding: 50px;
+		 }
+
+		 #bluesq{
+		 	width:450px;
+		 	height:450px;
+		 	background-color: blue;
+		 }
+
+
+		 #ylbox{
+		 	width: 200px;
+		 	height:200px;
+		 	background-color: yellow;
+		 }
+		
+	
+
+		</style>
+
+		
+</head>
+
+<body>
+
+	<div id="flip">Click!</div>
+	<div id ="panel">HELLO!</div>	
+
+	<p class="main"></p>
+
+	<div id="bluesq"></div>
+	<div id="ylbox"></div>	
+	
+
+</body>
+</html>
